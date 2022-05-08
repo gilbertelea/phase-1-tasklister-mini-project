@@ -1,4 +1,4 @@
-html {
+html, body {
   height: 100%;
   width: 100%;
   font-family: "Titillium Web", sans-serif;
@@ -7,12 +7,43 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(-39deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 }
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+
+
+
 
 button {
   font-size: 7px;
 }
+
+#new_task_description{
+background: rgb(211, 226, 97);
+}
+
+#task-description{
+  background: rgba(239, 60, 236, 0.984) ;
+  
+}
+
+#fname,
+#lname,
+
 
 #main-content {
   position: relative;
@@ -21,17 +52,19 @@ button {
   align-items: center;
   flex-direction: column;
   border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(241, 121, 121, 0.3);
+  padding: 14px 20px 18px 18px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 5px rgb(138, 28, 28);
+  background-image: url(https://i.pinimg.com/736x/69/ae/b9/69aeb9250da0d7c396814838662a944b.jpg);
+}
+
+#list {
+  margin: 10px;
+  border: 1px solid rgb(124, 147, 9);
+  background: zrgba(13, 224, 97, 0.75);
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
 
-#list {
-  margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
-  padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
-}
